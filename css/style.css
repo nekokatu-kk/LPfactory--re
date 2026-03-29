@@ -1,0 +1,1083 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*全体・共通 SPファースト*/
+
+html {
+	font-size: 14px;
+}
+
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family:
+		-apple-system,
+		/* Safari (mac/iOS) */
+		BlinkMacSystemFont,
+		/* Chrome/Edge (mac) */
+		"Hiragino Sans",
+		/* mac日本語 */
+		"Hiragino Kaku Gothic ProN",
+		"Noto Sans JP",
+		/* Android / fallback */
+		"Yu Gothic",
+		/* Windows */
+		"Meiryo",
+		/* 旧Windows */
+		sans-serif;
+	background-color: #fafafa;
+	line-height: 1.6;
+	color: #333;
+}
+
+.site-wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+section {
+	margin-top: 32px;
+}
+
+.section-container {
+	background-color: rgba(0, 120, 180, 0.08);
+	padding: 16px 0;
+}
+
+h2 {
+	text-align: center;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #34495e;
+}
+
+.panel {
+	background-color: rgba(245, 241, 237, 0.5);
+	padding: 12px 10px;
+	border-radius: 5px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	max-width: 360px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*header*/
+
+.site-header {
+	background: linear-gradient(to right,
+			rgba(255, 255, 255, 0.9),
+			rgba(171, 232, 243, 0.9));
+	position: fixed;
+	max-width: 1280px;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	height: 80px;
+}
+
+.header-inner {
+	max-width: 1280px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	padding-left: 0;
+}
+
+.logo {
+	width: 200px;
+	height: auto;
+	display: block;
+	margin-left: 16px;
+}
+
+/*CTA*/
+
+.nav-cta a {
+	font-size: 1.5rem;
+	text-decoration: none;
+	padding: 10px 20px;
+	color: #fff;
+	border-radius: 30px;
+	background: linear-gradient(45deg, #ff7e5f, #feb47b);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+}
+
+/*ヒーロイメージ*/
+
+.section-hero {
+	padding-top: 80px;
+	margin-top: 0;
+}
+
+.section-hero img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+
+.hero-copy {
+	margin: 32px 0;
+	font-style: italic;
+	background: rgba(0, 120, 180, 0.08);
+	border-radius: 12px;
+	padding: 10px 0;
+}
+
+.hero-copy h1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 1.2;
+}
+
+.h1-line1,
+.h1-line2 {
+	display: inline-block;
+}
+
+.h1-line1 {
+	transform: translateX(-30px);
+	font-size: 1.5rem;
+	font-family: "Zen Old Mincho", serif;
+	font-weight: 500;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: #34495e;
+}
+
+.h1-line2 {
+	align-self: flex-end;
+	transform: translateX(-5px);
+	font-size: 1.5rem;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-weight: 700;
+	color: #1f7abf;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+/*HANDS ONの紹介*/
+
+.company-visuals {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 16px;
+	gap: 16px;
+}
+
+.img-box {
+	aspect-ratio: 4 / 3;
+}
+
+.img-box img,
+.img-box iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.company-text p {
+	padding-bottom: 8px;
+}
+
+/*業務内容*/
+
+.job-text {
+	margin-bottom: 16px;
+}
+
+.job-img-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.job-img {
+	margin-bottom: 16px;
+}
+
+.job-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/*金属加工のメリット・魅力*/
+
+.benefits-text {
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.icon img {
+	width: 50px;
+	height: auto;
+}
+
+.benefits-list {
+	list-style: none;
+	padding-left: 28px;
+}
+
+.benefits-list li {
+	position: relative;
+	padding-left: 15px;
+}
+
+.benefits-list li::before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #0a20e2;
+	font-weight: bold;
+}
+
+/*よくある質問*/
+
+.question {
+	margin-top: 12px;
+}
+
+.span-q {
+	color: #C0392B;
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+.answer {
+	margin-top: 12px;
+	margin-bottom: 24px;
+}
+
+.span-a {
+	color: #E74C3C;
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+.span-answer {
+	font-weight: bold;
+}
+
+/*採用までの流れ*/
+
+.flow-list {
+	text-align: center;
+}
+
+.flow-item h3 {
+	letter-spacing: 0.2em;
+	margin-top: 6px;
+}
+
+.flow-item p {
+	margin-top: 6px;
+}
+
+.step {
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 20px;
+	background-color: rgba(76, 150, 187, 0.15);
+	font-weight: bold;
+	font-size: 1rem;
+	color: #1f7abf;
+}
+
+.flow-item {
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.flow-item:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	bottom: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 12px solid #1f7abf;
+}
+
+
+/*募集要項*/
+
+/*募集要項 アコーディオン*/
+
+/* 全体 */
+
+.recruit-header {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	align-items: center;
+}
+
+.recruit-header h2 {
+	grid-column: 2;
+	text-align: center;
+}
+
+/* トグルボタン */
+.recruit-toggle {
+	grid-column: 3;
+	justify-self: start;
+	width: 40px;
+	height: 40px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+/* 三角アイコン */
+.recruit-toggle .triangle {
+	display: block;
+	width: 0;
+	height: 0;
+	margin: auto;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 10px solid #333;
+	transition: transform 0.3s ease;
+}
+
+/* 中身（初期：閉じる） */
+.recruit-body {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.4s ease;
+	display: flex;
+	justify-content: center;
+}
+
+/*開いた状態*/
+
+.section-recruit.is-open .recruit-body {
+	max-height: 2000px;
+}
+
+.section-recruit.is-open .recruit-toggle .triangle {
+	transform: rotate(180deg);
+}
+
+.recruit-inner {
+	padding: 16px 0;
+}
+
+/*dl / dt / dd 見た目調整*/
+
+.recruit-list {
+	margin: 0;
+}
+
+.recruit-list dt {
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.recruit-list dd {
+	margin: 0;
+	padding-left: 8px;
+	line-height: 1.7;
+	margin-bottom: 16px;
+}
+
+.recruit-list .note {
+	font-size: 0.875rem;
+	color: #666;
+}
+
+/*footer*/
+
+.site-footer {
+	margin-top: 32px;
+	padding: 20px 12px;
+	background-color: rgba(0, 120, 180, 0.08);
+	text-align: center;
+}
+
+.site-footer small {
+	font-size: 0.85rem;
+}
+
+.site-footer aside {
+	font-size: 0.9rem;
+	color: #666;
+}
+
+.footer-nav {
+	margin: 12px 0;
+}
+
+.footer-nav li {
+	margin: 8px 0;
+	list-style: none;
+}
+
+.footer-nav a:not(.tel-icon) {
+	display: inline-block;
+	padding: 4px 0;
+}
+
+.footer-tel {
+	margin-top: 10px;
+}
+
+.tel-text {
+	font-size: 0.95rem;
+	margin-bottom: 2px;
+}
+
+.tel-time {
+	display: block;
+	font-size: 0.8rem;
+	color: #666;
+	margin-bottom: 6px;
+}
+
+.tel-icon {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 16px;
+	background: #1f7abf;
+	color: #fff;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tel-icon:active {
+	transform: scale(0.96);
+}
+
+/*その他ページのheader被り回避・共通*/
+
+.main-offset {
+	padding-top: 80px;
+}
+
+/*privacy-policy*/
+
+.privacy-policy {
+	line-height: 1.6;
+}
+
+.privacy-policy section {
+	padding: 0 16px;
+}
+
+.privacy-policy p,
+.privacy-policy ol {
+	margin-bottom: 16px;
+}
+
+.privacy-policy h1 {
+	margin-bottom: 16px;
+}
+
+.privacy-policy h2 {
+	margin: 16px 0;
+}
+
+.privacy-policy ol {
+	padding-left: 1.5em;
+}
+
+.privacy-policy ol li {
+	margin-bottom: 8px;
+}
+
+.privacy-policy li>ol {
+	margin-top: 8px;
+}
+
+.policy-end {
+	text-align: right;
+	margin-right: 1.5em;
+}
+
+.back-to-top {
+	text-align: center;
+	margin: 32px 0;
+}
+
+.back-to-top a {
+	font-size: 1rem;
+	text-decoration: underline;
+}
+
+/*問い合わせ・応募フォームのページ 共通*/
+
+.contact {
+	padding: 0 16px;
+}
+
+.contact h1 {
+	margin-bottom: 32px;
+}
+
+.required {
+	color: #E74C3C;
+	font-size: 0.75rem;
+	margin-left: 6px;
+}
+
+/* フォーム共通 */
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	font-size: 1rem;
+	font-family: inherit;
+	padding: 8px 4px;
+	background: transparent;
+	color: #333;
+}
+
+/* --- アンダーバー入力欄 --- */
+.contact-form input {
+	border: none;
+	border-bottom: 2px solid #ccc;
+	border-radius: 0;
+	outline: none;
+}
+
+/* フォーカス時 */
+.contact-form input:focus {
+	border-bottom-color: #1f7abf;
+}
+
+/* プレースホルダー */
+.contact-form input::placeholder {
+	color: #aaa;
+}
+
+/* textarea は少しだけ別扱い（好み） */
+.contact-form textarea {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.contact-form textarea:focus {
+	border-color: #1f7abf;
+	outline: none;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 0.9rem;
+	color: #555;
+}
+
+.form-actions {
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.form-actions button {
+	display: inline-block;
+	width: 100%;
+	max-width: 200px;
+	padding: 12px 16px;
+	font-size: 1.3rem;
+	background-color: #1f7abf;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/*フォームの入力エラーの表示 応募・問い合わせ共通*/
+
+.error-message {
+	color: #d93025;
+	font-size: 0.875rem;
+	margin-top: 4px;
+	display: none;
+}
+
+.form-group.has-error .error-message {
+	display: block;
+	animation: glow 1.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+	0% {
+		text-shadow: 0 0 0 rgba(217, 48, 37, 0.0);
+	}
+
+	50% {
+		text-shadow: 0 0 6px rgba(217, 48, 37, 0.6);
+	}
+
+	100% {
+		text-shadow: 0 0 0 rgba(217, 48, 37, 0.0);
+	}
+}
+
+.form-group.has-error input,
+.form-group.has-error textarea {
+	border-color: #d93025;
+}
+
+/*入力内容確認画面*/
+
+.confirm {
+	padding: 16px;
+	background: #f5f5f5;
+	border-radius: 8px;
+	max-width: 600px;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.confirm ul {
+	list-style: none;
+	padding: 0;
+}
+
+.confirm li {
+	margin-bottom: 12px;
+}
+
+.confirm button {
+	margin-right: 12px;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	background-color: #054ac9;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.1rem;
+}
+
+.confirm-actions {
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+}
+
+.confirm h2 {
+	padding-top: 80px;
+}
+
+.confirm p {
+	margin-bottom: 16px;
+}
+
+.confirm-textarea {
+	width: 100%;
+	min-height: 150px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #f9f9f9;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	text-align: left;
+}
+
+/*応募フォーム*/
+
+.contact p {
+	margin-bottom: 16px;
+}
+
+/*サンクスページ*/
+
+.thanks {
+	padding: 0 16px;
+}
+
+.thanks h1 {
+	text-align: center;
+	margin-bottom: 16px;
+	font-size: 1.5rem;
+}
+
+.thanks p {
+	background-color: rgba(0, 120, 180, 0.08);
+	padding: 10px 16px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+/*レスポンシブ  タブレット min-width767px*/
+
+@media screen and (min-width: 767px) {
+
+	/*全体・共通*/
+
+	html {
+		font-size: 16px;
+	}
+
+	.panel {
+		padding: 12px 10px;
+		border-radius: 5px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+		max-width: 450px;
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	section {
+		margin-top: 48px;
+	}
+
+	/*header*/
+
+	.logo {
+		margin-left: 24px;
+	}
+
+	/*CTA*/
+
+	.nav-cta a {
+		margin-right: 16px;
+	}
+
+	/*ヒーロイメージ*/
+
+	.h1-line1,
+	.h1-line2 {
+		font-size: 1.8rem;
+	}
+
+	.h1-line1 {
+		transform: translateX(-100px);
+	}
+
+	.h1-line2 {
+		transform: translateX(-15px);
+	}
+
+	/*金属加工のメリット・魅力*/
+
+	.icon img {
+		width: 70px;
+		height: auto;
+	}
+
+	.benefits-list {
+		list-style: none;
+		padding-left: 50px;
+	}
+
+	/*募集要項*/
+
+	.recruit-toggle .triangle {
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 12px solid #333;
+	}
+
+	/*footer*/
+
+	.site-footer {
+		margin-top: 48px;
+	}
+
+	.tel-icon {
+		pointer-events: none;
+		cursor: default;
+	}
+
+}
+
+/*レスポンシブ PC min-width1024px*/
+
+@media screen and (min-width: 1024px) {
+
+	/*全体・共通*/
+
+	html {
+		font-size: 18px;
+	}
+
+	section {
+		margin-top: 64px;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	.panel {
+		padding: 12px 10px;
+		max-width: 1000px;
+	}
+
+	figcaption {
+		text-align: center;
+	}
+
+	/*header*/
+
+	.site-header {
+		height: 100px;
+	}
+
+	.logo {
+		width: 250px;
+		margin-left: 30px;
+	}
+
+	/*CTA*/
+
+	.nav-cta a {
+		font-size: 1.8rem;
+		margin-right: 25px;
+	}
+
+	.nav-cta a:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+		opacity: 0.95;
+	}
+
+	.nav-cta a:active {
+		transform: translateY(1px);
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	/*ヒーロイメージ*/
+
+	.section-hero {
+		padding-top: 100px;
+	}
+
+	.hero-copy {
+		margin: 64px 0;
+	}
+
+	.hero-copy h1 {
+		line-height: 1.2;
+	}
+
+	.h1-line1,
+	.h1-line2 {
+		font-size: 2rem;
+	}
+
+	.h1-line1 {
+		transform: translateX(-200px);
+	}
+
+	.h1-line2 {
+		transform: translateX(-100px);
+	}
+
+	.site-footer {
+		margin-top: 64px;
+	}
+
+	/*HANDS ONの紹介*/
+
+	.company-visuals {
+		flex-direction: row;
+		justify-content: center;
+		gap: 40px;
+		padding: 0 40px;
+	}
+
+	.company-img {
+		flex: 6;
+	}
+
+	.map {
+		flex: 4;
+	}
+
+	.company-img.panel,
+	.map.panel {
+		max-width: none;
+	}
+
+	/*業務内容*/
+
+	.job-text {
+		max-width: 800px;
+		margin: 0 auto 24px;
+	}
+
+	.job-row {
+		display: flex;
+		justify-content: center;
+		gap: 25px;
+		margin-bottom: 16px;
+	}
+
+	.job-img {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.job-img img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	/*金属加工のメリット・魅力*/
+
+	.section-benefits .panel {
+		display: flex;
+		align-items: flex-start;
+		gap: 24px;
+		max-width: 700px;
+		padding: 24px;
+	}
+
+	.icon img {
+		width: 80px;
+		height: auto;
+	}
+
+	.benefits-list {
+		flex: 1;
+	}
+
+	.section-benefits .panel:first-child {
+		display: block;
+		width: fit-content;
+		max-width: 600px;
+		margin: 0 auto 24px;
+		padding: 10px 12px;
+	}
+
+	.benefits-text {
+		text-align: center;
+		margin: 0;
+	}
+
+	/*よくある質問*/
+
+	.qa-inner {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.qa-inner .question {
+		margin-top: 24px;
+	}
+
+	.qa-inner .answer {
+		margin-bottom: 24px;
+	}
+
+	/*その他ページのheader被り回避・共通*/
+
+	.main-offset {
+		padding-top: 100px;
+	}
+
+	/*privacy-policy*/
+
+	.privacy-policy {
+		line-height: 1.9;
+	}
+
+	.privacy-policy p {
+		margin-bottom: 20px;
+	}
+
+	.privacy-policy ol {
+		margin-bottom: 20px;
+		padding-left: 2em;
+	}
+
+	.privacy-policy ol li {
+		margin-bottom: 10px;
+	}
+
+	.privacy-policy li>ol {
+		margin-top: 10px;
+	}
+
+	.privacy-policy h1 {
+		margin-bottom: 24px;
+	}
+
+	.privacy-policy h2 {
+		margin: 32px 0 16px;
+	}
+
+	.policy-end {
+		margin-top: 32px;
+	}
+
+	.back-to-top {
+		margin-top: 40px;
+	}
+
+	/*問い合わせ・応募フォームのページ 共通*/
+
+	.form-actions button {
+		transition: all 0.2s ease;
+	}
+
+	.form-actions button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+	}
+
+	.form-actions button:active {
+		transform: translateY(1px);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	/*入力内容確認画面*/
+
+	.confirm button {
+		transition: all 0.2s ease;
+		padding: 10px 18px;
+	}
+
+	.confirm button:hover {
+		transform: translateY(-1px);
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	.confirm button:active {
+		transform: translateY(1px);
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+	}
+
+	.confirm-actions {
+		gap: 40px;
+	}
+
+}
